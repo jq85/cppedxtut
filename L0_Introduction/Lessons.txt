@@ -1,0 +1,23 @@
+Code Formatting
+Preprocessor directives which are used to have the compiler execute tasks prior to compiling the source code
+using directives which are utilized to indicate which namespaces to include in a source code file
+a function header which consists of a return type, function name, and parameters
+a function body containing the code that performs the actions required of that function
+statements that are contained in the C++ source code file
+comments for documenting the source code for programmers to understand what the code is intended to do
+a return statement that sends data back to the function caller
+curly braces to enclose bodies of statements. Commonly used to denote the body of a function or a flow controls statement such as a for loop
+
+C++ Statements
+declarations - these are used to declare variables and constants that will be used in your application
+assignments - these are used to assign values to variables in your application code
+preprocessor directives - covered in the topic on Code Formatting
+comments - used to document your code
+function declarations - covered in the topic on Code Formatting
+executable statements - these are used to perform operations and execute instructions. Examples would be cout << "Hello World!"; which outputs Hello World! to the console.
+
+C++ also has the concept of an enumeration, called an enum.  An enumeration is a set of constants stored as literal values.  They limit the choices for the type. With an enum, you specify a limited set of literal constants that can be assigned to the type.
+
+making use of short rather than int if your data range permits
+using a double rather than a float to get greater a accuracy for values representing money
+using a wchar_t for character data that doesn't fit in the standard ASCII character set, such as Japanese kanji

@@ -1,0 +1,44 @@
+Welcome to Module 1, Caching Demonstration.
+We're going to demonstrate the use of the keyword register, and
+alignas and alignof.
+So to do this we're gonna use two loops,
+one with the keyword register and one without.
+And we're gonna use a vector for each one and
+go in a loop filling it up.
+We will start a clock at the beginning of the loop and
+calculate the time it took at the end of the loop.
+And print that to standard output in seconds.
+So the first loop doesn't have the keyword register and
+the second loop does.
+And so, in theory, the second loop should be faster.
+The keyword register tells the compiler, or it's a hint to
+the compiler, there's no guarantee it will do this,
+to stick this variable, T, in a register.
+Because it's gonna be accessed a lot.
+And, in theory, the register access will be faster
+than the memory access for a normal variable on the stack.
+So it should speed up the loop performance.
+Then we align two integers, a and b, by 16 and 1024 bytes.
+And then we print out their alignment to check.
+And then we can also use the alignof a and
+b to check that they are aligned to 16 and 1024 bytes.
+And, if they are,
+we print the message to standard output as well.
+So let's run the program,
+because it takes a few seconds to run.
+Something you should be aware of with using the keyword register,
+is that you cannot use the addressed
+operator on a variable declared with keyword register.
+Because we have told the compiler to keep
+the variable in the register and not in the memory.
+Therefore, there is no memory address for the variable.
+Okay, so we can see here that the loop with register
+in the index was faster by about 3 seconds,
+just under just 3 seconds I hope.
+So it did work out to be faster.
+And we printed out the alignment of a and b here.
+And we can see that b has been padded with more zeros than a.
+Because it's aligned by 1024 bytes and not 16.
+And then we also get the output from alignof.
+So that confirms that a is aligned 16 bytes and
+b is aligned to 1024 bytes.

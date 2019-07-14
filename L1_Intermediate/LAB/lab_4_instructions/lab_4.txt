@@ -1,0 +1,28 @@
+# Lab Instructions
+==================
+
+For this Lab, you're going to leverage what you learned about files, file streams, and string streams to create a digital donation record.
+
+First, use your favorite text editor or your IDE to create a text file called "donation_total.txt".
+This will be your record of the total amount of donations your program has received.
+Since this is the first step, you don't have any donations yet. Add a 0 to your text file then save & close it.
+
+The first thing your program will do when it runs is check the current running total.
+It will do this by opening donation_total.txt and checking the value of the most recent total.
+This will ensure that you have an accurate total, even if you run your program multiple times.
+
+Your program will accept user-entered "donations" in the format "<name> <donation_amount>" from the console.
+For example: "Tom 25", which refers to a $25 donation from Tom.
+It will then extract the donation amount, convert it to an integer amount, then add that donation to a running total.
+Every time that the running total is updated, append the new total to your donation_total.txt.
+
+Implementation Tips:
+  - Remember that the cin >> operator only accepts one word at a time. Multi-word entries require std::getline().
+
+  - stringstream objects are a good method for splitting up multiword strings.
+
+  - stoi is a function that converts a numerical string into an integer.
+
+  - If you have multiple donation totals recorded in your file, the most recent one will be at the end of the file.
+    One good way of extracting this entry would be to use a loop that continually reads in lines from your file,
+    then temporarily stores each entry until it reaches the End Of File pointer.

@@ -1,0 +1,95 @@
+Module 1 Quiz
+ Bookmark this page
+
+Question 1
+0/1 point (graded)
+An exception can been thrown from the body of a deconstructor. (Choose one)
+  [?]
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Incorrect (0/1 point) Review
+
+
+Question 2
+1/1 point (graded)
+A call to reinterpret_cast performs a runtime check on the given types. (Choose one)
+  - FALSE
+correct
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 3
+1/1 point (graded)
+The register keyword guarantees a given variable will be stored in a register. (Choose one)
+  - FALSE
+correct
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 4
+1/1 point (graded)
+Given a const object, how should we declare its data members if we intend to modify them later?. (Choose one)
+  - [NOK] explicit
+  - [NOK] volatile
+  - [NOK] mutable
+correct
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 5
+1/1 point (graded)
+What happens when an exception goes uncaught?. (Choose one)
+  - [NOK] The compiler will create a default exception to throw.
+  - [OK] The code will be ended with a call to terminate()
+  - [NOK] The computer crashes
+  - [NOK] The compiler will search for an appropriate exception handler elsewhere in the code
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 6
+1/1 point (graded)
+Which of these is NOT a requirement for handwritten exceptions?. (Choose one)
+  - [OK] The exception must provide a helpful explanation of what went wrong
+  - [NOK] The exception must wait to fully construct a new object before deleting the old one
+  - [NOK] The exception must not leave memory leaks
+  - [NOK] The exception must release all allocated resouces obtained by an object's constructor
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 7
+0/1 point (graded)
+What is the purpose of Scope Guarding? (Choose one)
+  - [?] It increases reliability and efficiency by ensuring that a method won't leave its scope
+  - [?] It improves security by preventing an unexpected departure from the predefined scope incorrect
+  - [?] It reduces code complexity by consolidating multiple deconstruction protocols
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Incorrect (0/1 point) Review
+
+
+Question 8
+1/1 point (graded)
+It is never necessary to write one's own copy constructor, as the compiler will automatically generate one. (Choose one)
+  - FALSE
+correct
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 9
+1/1 point (graded)
+Memory allocation failures usually result in a bad_alloc exception being thrown. (Choose one)
+  - TRUE
+correct
+ Submit You have used 1 of 1 attempt Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point) Review
+
+
+Question 10
+1/1 point (graded)
+The keywords alignof and alignas are useful for improving the efficiency of cache access. (Choose one)
+  - TRUE
+correct

@@ -1,0 +1,24 @@
+LINKING OBJECTS:
+You don't link header files. You link object files, which are created by compiling .cpp files. You need to compile all your source files and pass the resulting object files to the linker.
+From the error message it seems you're using GCC. If so, I think you can do
+  $ g++ m_name a.cpp b.cpp
+  $  g++ -g -o const_obj .\const_obj.cpp .\Rectangle2.cpp
+to have it compile both .cpp files and invoke the linker with the resulting object files.
+
+
+POINT TO HEADER FILES ON COMMAND LINE:
+The -I switch is used for pointing to other .h files:
+  $ g++ -I/usr/include -lnewmat -ltinyxml test.cpp test.h
+
+
+INCLUDE LIBRARIES:
+And if you want to add a path to the Library Search-Path you use -L, for example:
+  $ g++ -L/usr/lib -lnewmat -ltinyxml test.cpp test.h
+
+
+Use g++ in stead of gcc: g++ -g -o MatSim MatSim.cpp
+Add -lstdc++: gcc -g -o MatSim MatSim.cpp -lstdc++
+Replace <string.h> by <string>
+
+iostream linker error
+just add -L/usr/local/bin -L/usr/lib in the compilation rules and it should work.
